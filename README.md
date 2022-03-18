@@ -2,7 +2,7 @@
 
 Este es un proyecto de un listado de Contactos realizado en HTML, CSS, Bootstrap y JavaScript.
 
-Para el armado de este listado de contactos me base en el (tutorial de Codificandolo en Youtube)[https://www.youtube.com/watch?v=guy1QiQjRzQ&list=PLfJokVe6Qpnk-qTOpVyLszdP2uipY-2jP&index=72]
+Para el armado de este listado de contactos me base en el <a href="https://www.youtube.com/watch?v=guy1QiQjRzQ&list=PLfJokVe6Qpnk-qTOpVyLszdP2uipY-2jP&index=72">tutorial de Codificandolo en Youtube</a> 
 
 Más allá de basarme en este tutorial, traté de darle el valor agregado de modificarle del listado de contactos.
 
