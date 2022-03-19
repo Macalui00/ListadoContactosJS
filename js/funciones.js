@@ -21,16 +21,23 @@ const crearContacto = (parentNode, contacto, db) =>{
     let nombreContacto = document.createElement('h3')
     let numeroContacto = document.createElement('p')
     let direccionContacto = document.createElement('p')
+    let iconoEditar = document.createElement('span')
     let iconoBorrar = document.createElement('span')
 
     nombreContacto.innerHTML = contacto.nombre 
     numeroContacto.innerHTML = contacto.numero 
     direccionContacto.innerHTML = contacto.direccion  
+    iconoEditar.innerHTML ='edit'
     iconoBorrar.innerHTML = 'delete_forever'
 
     liContacto.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center', 'contacto')
-    iconoBorrar.classList.add('material-icons', 'icono')
+    iconoEditar.classList.add('material-icons', 'icono-editar')
+    iconoBorrar.classList.add('material-icons', 'icono-delete')
     
+    iconoBorrar.onclick = ()=>{
+        alert("Todavia no funciona");
+    }
+
     iconoBorrar.onclick = ()=>{
         db.removeItem(contacto.id)
         window.location.href = "/"
@@ -39,6 +46,7 @@ const crearContacto = (parentNode, contacto, db) =>{
     liContacto.appendChild(nombreContacto)
     liContacto.appendChild(numeroContacto)
     liContacto.appendChild(direccionContacto)
+    liContacto.appendChild(iconoEditar)
     liContacto.appendChild(iconoBorrar)
     
     parentNode.appendChild(liContacto)

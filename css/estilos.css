@@ -54,8 +54,12 @@ body{
     font-size: 20px !important;
 }
 
-.icono{
+.icono-delete{
     color: tomato;
+    cursor: pointer;
+}
+.icono-editar{
+    color: green;
     cursor: pointer;
 }
 
@@ -69,9 +73,12 @@ body{
 }
 
 @media only screen and (min-width: 501px) and (max-width: 700px){
-.formulario-datos{
-    width: 100%;
-}
+    .formulario-datos{
+        width: 100%;
+    }
+    .container{
+        width: 100vw;
+    }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 900px){
