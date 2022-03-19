@@ -30,7 +30,7 @@ body{
 /*----------- Formulario de Datos -----------*/
 .formulario-datos{
     display: block;
-    width: 80%;
+    width: 50%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,26 @@ body{
 .icono{
     color: tomato;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    .formulario-datos{
+        width: 100%;
+    } 
+    .d-flex{
+        display: inline-block !important;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px){
+.formulario-datos{
+    width: 100%;
+}
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px){
+    .formulario-datos{
+        width: 100%;
+    }
+
 }
