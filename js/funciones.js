@@ -40,7 +40,10 @@ const crearContacto = (parentNode, contacto, db) =>{
 
     iconoBorrar.onclick = ()=>{
         db.removeItem(contacto.id)
-        window.location.href = "/"
+        // para que se pueda probar correctenete desde github pages
+        window.location.href = "/ListadoContactosJS/"
+        // si no se quisiera probar desde github pages usar:
+        //window.location.href = "/"
     }
 
     liContacto.appendChild(nombreContacto)
