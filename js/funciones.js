@@ -34,7 +34,7 @@ const crearContacto = (parentNode, contacto, db) =>{
     iconoEditar.classList.add('material-icons', 'icono-editar')
     iconoBorrar.classList.add('material-icons', 'icono-delete')
     
-    iconoBorrar.onclick = ()=>{
+    iconoEditar.onclick = ()=>{
         alert("Todavia no funciona");
     }
 
